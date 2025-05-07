@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:sagarpos360/core/constants/app_colors.dart';
-import '../../core/constants/onBoarding_content.dart';
+import 'package:sagarpos360/exports/myExports.dart';
 
 class UserOnBoard extends StatefulWidget {
   const UserOnBoard({super.key});
@@ -34,7 +32,10 @@ class _UserOnBoardState extends State<UserOnBoard> {
         actions: [
           if (currentIndex != onBoardcontents.length - 1)
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => MyLoginRegister()));
+              },
               child: const Text("Skip", style: TextStyle(color: Colors.grey)),
             )
         ],
@@ -99,6 +100,10 @@ class _UserOnBoardState extends State<UserOnBoard> {
             child: ElevatedButton(
               onPressed: () {
                 if (currentIndex == onBoardcontents.length - 1) {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MyLoginRegister()));
                 } else {
                   _controller.nextPage(
                     duration: const Duration(milliseconds: 300),
@@ -107,7 +112,7 @@ class _UserOnBoardState extends State<UserOnBoard> {
                 }
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0XFF0075E7),
+                backgroundColor: AppColors.primaryDark,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
