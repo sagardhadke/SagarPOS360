@@ -205,6 +205,19 @@ class UserLogin extends StatelessWidget {
                       ),
                     ],
                   )),
+              SizedBox(
+                height: 20.h,
+              ),
+              TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Don't Have an Account? Sign Up",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  )),
             ],
           ),
         ),
