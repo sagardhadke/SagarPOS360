@@ -13,3 +13,4 @@ export  '../../core/constants/onBoarding_content.dart';
 //Screens
 export 'package:sagarpos360/screens/splash.dart';
 export 'package:sagarpos360/screens/auth/login_singup.dart';
+export 'package:sagarpos360/screens/auth/login.dart';
