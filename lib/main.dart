@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sagarpos360/core/constants/app_colors.dart';
-import 'package:sagarpos360/screens/splash.dart';
+import 'package:sagarpos360/screens/onBoarding/onBoard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +19,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: MySplash());
+        home: UserOnBoard());
   }
 }
