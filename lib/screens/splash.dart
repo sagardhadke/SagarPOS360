@@ -30,13 +30,13 @@ class _MySplashState extends State<MySplash> {
             Center(
               child: Image.asset(
                 "assets/icons/app-logo.png",
-                height: 250,
-                width: 250,
+                height: 250.h,
+                width: 250.w,
                 fit: BoxFit.contain,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 24.0),
+              padding:  EdgeInsets.only(bottom: 24.0.h),
               child: Column(
                 spacing: 15,
                 children: [
@@ -50,7 +50,7 @@ class _MySplashState extends State<MySplash> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontFamily: 'Poppins',
-                        fontSize: 18,
+                        fontSize: 18.sp,
                         fontWeight: FontWeight.w600,
                         color: Colors.white),
                   ),

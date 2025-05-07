@@ -53,29 +53,29 @@ class _UserOnBoardState extends State<UserOnBoard> {
                 final content = onBoardcontents[i];
                 return Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                      EdgeInsets.symmetric(horizontal: 30.w, vertical: 10.h),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
                         content.image ?? '',
-                        height: 250,
+                        height: 250.h,
                       ),
-                      const SizedBox(height: 30),
+                       SizedBox(height: 30.h),
                       Text(
                         content.title ?? '',
-                        style: const TextStyle(
-                          fontSize: 26,
+                        style: TextStyle(
+                          fontSize: 26.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      const SizedBox(height: 20),
+                      SizedBox(height: 20.h),
                       Text(
                         content.description ?? '',
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 16.sp,
                           color: Colors.grey,
                         ),
                       ),
@@ -92,10 +92,10 @@ class _UserOnBoardState extends State<UserOnBoard> {
               (index) => buildDot(index),
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20.h),
           Container(
-            height: 55,
-            margin: const EdgeInsets.symmetric(horizontal: 30),
+            height: 55.h,
+            margin:  EdgeInsets.symmetric(horizontal: 30.w),
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
@@ -115,18 +115,18 @@ class _UserOnBoardState extends State<UserOnBoard> {
                 backgroundColor: AppColors.primaryDark,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(20.r),
                 ),
               ),
               child: Text(
                 currentIndex == onBoardcontents.length - 1
                     ? "Get Started"
                     : "Next",
-                style: const TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 16.sp),
               ),
             ),
           ),
-          const SizedBox(height: 30),
+          SizedBox(height: 30.h),
         ],
       ),
     );
@@ -135,11 +135,11 @@ class _UserOnBoardState extends State<UserOnBoard> {
   Widget buildDot(int index) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
-      height: 10,
+      height: 10.h,
       width: currentIndex == index ? 25 : 10,
-      margin: const EdgeInsets.symmetric(horizontal: 5),
+      margin:  EdgeInsets.symmetric(horizontal: 5.h),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.r),
         color:
             currentIndex == index ? AppColors.primaryColor : Colors.grey[300],
       ),
