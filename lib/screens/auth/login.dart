@@ -211,7 +211,7 @@ class UserLogin extends StatelessWidget {
               TextButton(
                   onPressed: () {},
                   child: Text(
-                    "Don't Have an Account? Sign Up",
+                    "Haven’t any account? Register",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16.sp,
